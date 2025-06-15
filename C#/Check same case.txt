@@ -1,0 +1,18 @@
+using System;
+
+public class Kata {
+  public static int SameCase(char a, char b) 
+  {
+    if (Char.IsLetter(a) && Char.IsLetter(b))
+            {
+                if (Char.IsUpper(a) == Char.IsUpper(b))
+                    return 1;
+                else
+                    return 0;
+            }
+            else
+            {
+                return -1;
+            }     
+  }
+}

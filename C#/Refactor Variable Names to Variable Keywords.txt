@@ -1,0 +1,18 @@
+public class VariableName
+{
+    // Refactor this variables. Good luck ^_~
+    public bool @bool = true;
+    public char @char = 'a';
+    public sbyte @sbyte = 64;
+    public byte @byte = 1;
+    public short @short = 120;
+    public ushort @ushort = 119;
+    public int @int = 3425;
+    public uint @uint = 2525;
+    public long @long= 252525;
+    public ulong @ulong = 252525;
+    public float @float = 0.25f;
+    public double @double = 0.25d;
+    public decimal @decimal = 0.361m;
+    
+}

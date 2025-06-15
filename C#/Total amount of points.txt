@@ -1,0 +1,21 @@
+using System.Linq;
+using System;
+
+public static class Kata {
+    public static int TotalPoints(string[] games){
+      
+      int points=0;
+      foreach(string match in games){
+      int first = Convert.ToInt32(match[0].ToString());
+      int second = Convert.ToInt32(match[2].ToString());
+        
+      if(first > second){
+        points +=3;
+      }
+      else if(first == second){
+        points +=1;
+      }
+       }
+      return points;
+     }  
+    }
