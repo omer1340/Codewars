@@ -1,0 +1,17 @@
+public class Kata
+{
+  public static string DrawStairs(int n)
+  {
+    string word="";
+    int space = 1;
+    
+    for (int i =n;i>1;i--){      
+      word=string.Concat(word,"I\n");
+      word += new string(' ', space);
+      space++;        
+    }
+    word=string.Concat(word,"I");
+    
+    return word;           
+  }
+}
