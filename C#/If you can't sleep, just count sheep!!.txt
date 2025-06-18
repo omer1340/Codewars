@@ -1,0 +1,13 @@
+using System;
+
+public static class Kata
+{
+  public static string CountSheep(int n)
+  {
+    string word = "";
+    for(int i =1;i<=n;i++){
+      word = string.Concat(word,i+" sheep...");
+    }
+    return word;
+  }
+}
