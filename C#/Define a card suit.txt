@@ -1,0 +1,38 @@
+using System;
+
+namespace Solution
+{
+    public partial class Kata
+    {
+        public static string DefineSuit(string card)
+        {
+          string last = card.Substring(card.Length-1);
+          string symbol;
+          switch(last){
+              case "♣":
+              symbol ="clubs";
+              return symbol;
+              
+              
+              case "♦":
+              symbol ="diamonds";
+              return symbol;
+              
+              
+              case "♥":
+              symbol ="hearts";
+              return symbol;
+              
+              
+              case "♠":
+              symbol ="spades";
+              return symbol;
+              
+              default:
+              return "0";
+              
+          }
+           // return Deck[0]; //string[] Deck is preloaded
+        }
+    }
+}

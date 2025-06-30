@@ -1,0 +1,20 @@
+using System;
+public static class Kata
+{
+  public static int СenturyFromYear(int year)
+  {
+    string Year = Convert.ToString(year);
+    string Year_last = Year.Substring(Year.Length-2);
+    string Century = Year.Remove(Year.Length-2);
+    int century =Convert.ToInt32(Century);
+    
+    if(Year_last=="00"){
+      return century;
+    }
+    else{
+      century++;
+      return century;
+    }
+    
+  }
+}
